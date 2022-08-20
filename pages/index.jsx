@@ -11,7 +11,7 @@ const Home = () => {
   const fetchNFTs = async() => {
     let nfts; 
     console.log("fetching nfts");
-    const api_key = "bjv97BRZz1ibdmml0AQc1MMuWl82O3wS"
+    const api_key = "FyzWSKx4mUXXprBmVVnTN2RkkMd8R4Px"
     const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${api_key}/getNFTs/`;
     var requestOptions = {
         method: 'GET'
@@ -39,7 +39,7 @@ const Home = () => {
       var requestOptions = {
         method: 'GET'
       };
-      const api_key = "bjv97BRZz1ibdmml0AQc1MMuWl82O3wS"
+      const api_key = "FyzWSKx4mUXXprBmVVnTN2RkkMd8R4Px"
       const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${api_key}/getNFTsForCollection/`;
       const fetchURL = `${baseURL}?contractAddress=${collection}&withMetadata=${"true"}`;
       const nfts = await fetch(fetchURL, requestOptions).then(data => data.json())
